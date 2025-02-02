@@ -1,5 +1,5 @@
 
-import java.util.HashSet;
+import java.util.Arrays;
 
 public class leetcode_242 {
 
@@ -10,36 +10,16 @@ public class leetcode_242 {
     }
 
     public static boolean isAnagram(String s, String t) {
-        String ans = "";
-        String check = "";
-        for (int i = 0; i < s.length(); i++) {
-            for (int j = 0; j < t.length(); j++) {
-                if (s.charAt(i) == t.charAt(j)) {
-                    ans += t.charAt(j);
-                }
-            }
+        if (s.length() != t.length()) {
+            return false;
         }
 
-        String a1 = remDuplicate(s);
-        String a2 = remDuplicate(ans);
-        if (a1.equals(a2)) {
-            return true;
-        }
-        return false;
-    }
+        char[] str1 = s.toCharArray();
+        char[] str2 = t.toCharArray();
 
-    public static String remDuplicate(String str) {
+        Arrays.sort(str1);
+        Arrays.sort(str2);
 
-        HashSet<Character> set = new HashSet<>();
-        for (char c : str.toCharArray()) {
-            set.add(c);
-        }
-
-        str = "";
-        for (char c : set) {
-            str += c;
-        }
-
-        return str;
+        return Arrays.equals(str1, str2);
     }
 }
