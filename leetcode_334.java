@@ -17,7 +17,6 @@ public class leetcode_334 {
             } else if (second >= nums[i]) {
                 second = nums[i];
             } else if (third >= nums[i]) {
-                third = nums[i];
                 return true;
             }
         }
