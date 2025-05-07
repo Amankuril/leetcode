@@ -16,6 +16,6 @@ public class leetcode_744 {
                 right = mid - 1;
             }
         }
-        return letters[left % letters.length]; // Wrap around to the start of the array
+        return letters[left % letters.length]; 
     }
 }
