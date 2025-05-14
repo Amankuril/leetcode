@@ -4,8 +4,8 @@ import java.util.HashMap;
 public class leetcode_347 {
 
     public static void main(String[] args) {
-        int[] nums = {1, 1, 1, 2, 2, 3};
-        int k = 2;
+        int[] nums = {1, 1, 1, 2, 2, 4, 4, 4, 5, 5};
+        int k = 3;
 
         int[] result = topKFrequent(nums, k);
         for (int num : result) {

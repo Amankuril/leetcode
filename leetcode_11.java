@@ -2,7 +2,7 @@
 public class leetcode_11 {
 
     public static void main(String[] args) {
-        int[] height = {8, 7, 2, 1};
+        int[] height = { 8, 7, 2, 1, 9 };
         System.out.println(maxArea(height));
     }
 

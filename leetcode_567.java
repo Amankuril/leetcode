@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class leetcode_567 {
 
     public static void main(String[] args) {
-        String s1 = "ab";
+        String s1 = "de";
         String s2 = "eidbaooo";
 
         System.out.println(checkInclusion(s1, s2));

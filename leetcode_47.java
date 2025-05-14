@@ -28,7 +28,7 @@ public class leetcode_47 {
 
         helper(nums, arr, new ArrayList<Integer>(), new boolean[nums.length]);
 
-        Set<List<Integer>> set = new HashSet<>(arr);
+        Set<List<Integer>> set = new HashSet<>(arr); // removing the same lists
 
 
         return new ArrayList<List<Integer>>(set);
